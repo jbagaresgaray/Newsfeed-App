@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-
 import { NavController, NavParams } from 'ionic-angular';
 import * as _ from 'lodash';
+
+import { Page3 } from '../../pages/page3/page3';
 
 @Component({
   selector: 'page-page2',
@@ -20,12 +21,12 @@ export class Page2 {
     this.color = navParams.get('color');
 
     this.sources = _.filter(this.data,{category: this.category});
-    console.log('sources: ',this.sources);
   }
 
-  itemTapped(event, item) {
-    this.navCtrl.push(Page2, {
-      item: item
+  itemTapped(item) {
+    this.navCtrl.push(Page3, {
+      item: item,
+      color: this.color
     });
   }
 }

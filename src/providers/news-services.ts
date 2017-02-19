@@ -28,9 +28,9 @@ export class NewsServices {
         });
     }
 
-    loadNewsArticles(source:string, sortBy ? : string) {
+    loadNewsArticles(source: string) {
         return new Promise((resolve, reject) => {
-            this.http.get('https://newsapi.org/v1/articles?source=' + source + '&language=en&apiKey=' + this.apiKey)
+            this.http.get('https://newsapi.org/v1/articles?source=' + source + '&apiKey=' + this.apiKey)
                 .map(res => res.json())
                 .subscribe((data) => {
                     resolve(data);
