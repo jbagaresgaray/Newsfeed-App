@@ -10,22 +10,16 @@
             </button>
         </ion-buttons>
     </ion-navbar>
+    <ion-toolbar color="royal">
+    </ion-toolbar>
 </ion-header>
 <ion-content>
     <ion-list>
-        <button ion-item color="royal">
-        </button>
-        <button ion-item text-center color="energized">
-            TECHNOLOGY
-        </button>
-        <button ion-item text-center color="assertive">
-            DESIGN
-        </button>
-        <button ion-item text-center color="positive">
-            STARTUP
-        </button>
-        <button ion-item text-center color="lightroyal">
-            BUSINESS
+        <button ion-item text-center color="{{colors[$index]}}" *ngFor="let item of sources; let $index = index" detail-none (click)="showSources(item,colors[$index])">
+            <ion-thumbnail item-left>
+                <img src="{{icons[$index]}}">
+            </ion-thumbnail>
+            <ion-label text-left>{{item | uppercase}}</ion-label>
         </button>
     </ion-list>
 </ion-content>

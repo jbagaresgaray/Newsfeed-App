@@ -1,23 +1,19 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Page Two</ion-title>
-  </ion-navbar>
+    <ion-navbar color={{color}}>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>{{category | uppercase}}</ion-title>
+    </ion-navbar>
 </ion-header>
-
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+    <ion-list>
+        <button ion-item *ngFor="let item of sources" (click)="itemTapped($event, item)">
+            <ion-avatar item-left>
+                <img src="{{item.urlsToLogos.large}}">
+            </ion-avatar>
+            <h2>{{item.name}}</h2>
+            <p>{{item.category}}</p>
+        </button>
+    </ion-list>
 </ion-content>

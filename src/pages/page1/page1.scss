@@ -1,3 +1,31 @@
 page-page1 {
-
+    ion-list {
+        height: 100%;
+    }
+    .item {
+        height: 130px;
+        .item-inner {
+            height: 130px;
+        }
+        ion-label {
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+    }
+    .item-md.item-block .item-inner {
+        border-bottom: 0px !important;
+    }
+    .list-ios .item-block .item-inner {
+        border-bottom: 0px !important;
+    }
+    .list-wp .item-block .item-inner {
+        border-bottom: 0px !important;
+    }
+    ion-thumbnail img {
+        opacity: 0.2;
+    }
+    .header-ios .toolbar-background-ios,
+    .footer-ios .toolbar-background-ios {
+       border: none !important;
+    }
 }
