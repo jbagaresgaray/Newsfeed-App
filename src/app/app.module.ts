@@ -9,6 +9,8 @@ import { Page4 } from '../pages/page4/page4';
 
 import { NewsServices } from '../providers/news-services';
 
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -30,7 +32,8 @@ import { NewsServices } from '../providers/news-services';
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    NewsServices
+    NewsServices,
+    InAppBrowser
   ]
 })
 export class AppModule {}
