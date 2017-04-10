@@ -14,7 +14,8 @@
         <ion-refresher-content></ion-refresher-content>
     </ion-refresher>
     <ion-card *ngFor="let item of newsData" (click)="itemTapped(item)">
-        <img src="{{item.urlToImage}}" />
+        <img src="{{item.urlToImage}}" ng-if="item.urlToImage !== null"/>
+        <img src="./assets/bg.jpg" ng-if="item.urlToImage == null"/>
         <div class="card-title">{{item.title}}</div>
         <div class="card-subtitle">{{item.author}}</div>
     </ion-card>

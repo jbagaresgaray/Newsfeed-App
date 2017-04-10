@@ -6,7 +6,7 @@
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
-    <allow-navigation href="http://localhost:8080/*"/>
+    <allow-navigation href="http://localhost:8080/*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -19,7 +19,7 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-    </platform>    
+    </platform>
     <feature name="CDVWKWebViewEngine">
         <param name="ios-package" value="CDVWKWebViewEngine" />
     </feature>
@@ -42,4 +42,5 @@
     <plugin name="cordova-plugin-device" spec="1.1.4" />
     <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
     <plugin name="cordova-plugin-wkwebview-engine" spec="https://github.com/driftyco/cordova-plugin-wkwebview-engine.git" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.7.0" />
 </widget>
