@@ -1,20 +1,7 @@
-Ionic 2 App Base
-=====================
 
-This is the base template for Ionic 2 starter apps.
+# Newsica
 
-## Using this project
+– Newsfeed UI Concept by Vijay Verma (https://ios.uplabs.com/posts/newsica-newsfeed-ui-concept) 
 
-You'll need the Ionic CLI with support for v2 apps:
 
-```bash
-$ npm install -g ionic
-```
-
-Then run:
-
-```bash
-$ ionic start myApp
-```
-
-More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/docs/v2/getting-started/) page.
+# ![Logo](https://assets.materialup.com/uploads/4c8ee95d-beca-4e6c-bff0-ed1e9e024e06/attachment.png)  
