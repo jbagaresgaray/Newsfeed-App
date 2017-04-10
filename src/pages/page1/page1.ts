@@ -19,8 +19,8 @@ export class Page1 {
         this.sources = [];
         this.newsData = [];
         let colors = [
-        	'energized',
-            'royal',
+        	'royal',
+            'energized',
             'assertive',
             'positive',
             'lightroyal'
@@ -33,6 +33,7 @@ export class Page1 {
         	assetpath + 'gamepad.png',
         	assetpath + 'notebook.png',
         	assetpath + 'headphone-symbol.png',
+            assetpath + 'shake-hands.png',
         	assetpath + 'atom.png',
         	assetpath + 'football.png',
         	assetpath + 'memory-chip.png'
