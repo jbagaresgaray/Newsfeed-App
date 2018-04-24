@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import * as moment from 'moment';
-import { InAppBrowser,SocialSharing } from 'ionic-native';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
 
 import { Page3 } from '../../pages/page3/page3';
 /*
@@ -18,7 +19,7 @@ export class Page4 {
 
     article: any;
     color: any;
-    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    constructor(public navCtrl: NavController, public navParams: NavParams,private iab: InAppBrowser) {
         this.color = navParams.get('color');
         this.article = navParams.get('item');
         this.article.publishedAt = moment(this.article.publishedAt).format('MMMM Do YYYY, h:mm:ss a');
@@ -31,6 +32,6 @@ export class Page4 {
     }
 
     openToBrowser(url) {
-    	let browser = new InAppBrowser(url, '_blank','zoom=yes,location=yes');
+    	this.iab.create(url, '_blank','zoom=yes,location=yes');
     }
 }
