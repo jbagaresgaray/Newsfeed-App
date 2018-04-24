@@ -19,20 +19,21 @@ export class Page1 {
         this.sources = [];
         this.newsData = [];
         let colors = [
-        	'energized',
-            'royal',
+        	'royal',
+            'energized',
             'assertive',
             'positive',
             'lightroyal'
         ];
 
-        let assetpath = '../assets/icon/';
+        let assetpath = './assets/icon/';
         let icons = [
         	assetpath + 'diagram.png',
         	assetpath +'video-camera.png',
         	assetpath + 'gamepad.png',
         	assetpath + 'notebook.png',
         	assetpath + 'headphone-symbol.png',
+            assetpath + 'shake-hands.png',
         	assetpath + 'atom.png',
         	assetpath + 'football.png',
         	assetpath + 'memory-chip.png'

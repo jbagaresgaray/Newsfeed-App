@@ -1,6 +1,6 @@
 {
-  "name": "ionic2-app-base",
-  "app_id": "",
+  "name": "Newsica",
+  "app_id": "83d1384b",
   "integrations": {
     "cordova": {}
   },
